@@ -10,6 +10,11 @@ type        = string
 
 }
 
+variable "bucket_name_set" {
+  description = "A set of GCS bucket names..."
+  type        = list(string)
+}
+
 variable "region" {
 description = "Google Cloud region"
 type        = string
